@@ -77,7 +77,7 @@ const Banner = () => {
                     {`Hi! I'm Nenad,`}{" "}
                     <span
                       className="txt-rotate"
-                      data-rotate='[ "Frontend Developer.", "Continuous Learner.", "Goal-Driven." ]'
+                      data-rotate='[ "Frontend Developer.", "NContinuous Learner.", "Goal-Driven." ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
