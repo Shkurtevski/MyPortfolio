@@ -352,11 +352,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 10%;
+  top: 28%;
   position: absolute;
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+/*/////////////////////
+/-----> /BANNER/ <-----/ 
+/////////////////////*/
+.projects {
+  background-color: #000;
+}
+
+.projects-wrapper {
+  text-align: center;
 }
 /*/////////////////////
 /-----> /MEDIA-QUERIES/ <-----/ 
