@@ -1,15 +1,31 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { projects } from "../data/data";
+import ProjectCard from "./sub-components/ProjectCard";
 
-const Projects = () => {
+interface Props {
+    title: string;
+    text: string;
+}
+
+const Projects = ({title, text}: Props) => {
   return (
-    <div className="projects">
+    <section className="project" id="projects">
       <Container>
-        <div className="projects-wrapper">
-          <h2>Projects</h2>
-        </div>
+        <Row>
+          <Col size={12}>
+            <div>
+              <h2>{title}</h2>
+              <p>{text}</p>
+            </div>
+            <Row>
+              {projects.map((project, index) => {
+                return <ProjectCard key={index} {...project} />;
+              })}
+            </Row>
+          </Col>
+        </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 

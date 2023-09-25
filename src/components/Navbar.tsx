@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import linkedinIcon from "../assets/img/linkedin.svg";
 import facebookIcon from "../assets/img/facebook.svg";
 import instagramIcon from "../assets/img/instagram.svg";
-import { Link } from "react-router-dom";
 
-const NavBar = () => {
+interface NavBarProps {}
+
+const NavBar: React.FC<NavBarProps> = () => {
   const [activeLink, setActiveLink] = useState<string>("home");
   const [scrolled, setScrolled] = useState<boolean>(false);
 
@@ -36,8 +38,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
-              as={Link}
-              to="/home"
+              href="#home"
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
@@ -46,8 +47,7 @@ const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              as={Link}
-              to="/skills"
+              href="#skills"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
@@ -56,8 +56,7 @@ const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              as={Link}
-              to="/projects"
+              href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -90,11 +89,11 @@ const NavBar = () => {
                 <img src={instagramIcon} alt="instagram-logo" />
               </a>
             </div>
-            <Link to="/connect">
+            <HashLink to="#connect">
               <button className="vvd">
                 <span>Contact</span>
               </button>
-            </Link>
+            </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>

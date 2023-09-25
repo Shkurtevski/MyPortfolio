@@ -320,7 +320,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /-----> /SKILLS/ <-----/ 
 /////////////////////*/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 3rem 0;
   position: relative;
 }
 .skill-bx {
@@ -360,13 +360,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*/////////////////////
-/-----> /BANNER/ <-----/ 
+/-----> /PROJECTS/ <-----/ 
 /////////////////////*/
-.projects {
-  background-color: #000;
+.project {
+  padding: 3rem 0;
+  background-color: black;
+  position: relative;
 }
-
-.projects-wrapper {
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.project p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
   text-align: center;
 }
 /*/////////////////////
