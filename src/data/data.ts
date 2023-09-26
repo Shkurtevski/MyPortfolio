@@ -17,7 +17,12 @@ import reactIcon from "../assets/img/React-icon.png";
 import cssIcon from "../assets/img/css-logo.png";
 import htmlIcon from "../assets/img/html-logo.png";
 import sassIcon from "../assets/img/sass-logo.png";
-import bootstrapIcon from "../assets/img/bootstrap-logo.svg"
+import bootstrapIcon from "../assets/img/bootstrap-logo.png";
+import tailwindIcon from "../assets/img/tailwind-logo.png";
+import jqueryIcon from "../assets/img/jquery-logo.png";
+import gitIcon from "../assets/img/git-logo.png";
+import nextjsIcon from "../assets/img/next-js-logo.svg";
+import uiuxIcon from "../assets/img/ui-ux.png";
 
 export const projects: Project[] = [
   {
@@ -85,22 +90,47 @@ export const skillsData = [
   },
   {
     id: 4,
+    icon: nextjsIcon,
+    title: "Next js (Basic Knowledge)",
+  },
+  {
+    id: 5,
     icon: cssIcon,
     title: "CSS",
   },
   {
-    id: 5,
+    id: 6,
     icon: htmlIcon,
     title: "HTML",
   },
   {
-    id: 6,
+    id: 7,
     icon: sassIcon,
     title: "Sass",
   },
   {
-    id: 7,
+    id: 8,
+    icon: jqueryIcon,
+    title: "jQuery",
+  },
+  {
+    id: 9,
     icon: bootstrapIcon,
     title: "Bootstrap",
+  },
+  {
+    id: 10,
+    icon: tailwindIcon,
+    title: "Tailwind CSS",
+  },
+  {
+    id: 11,
+    icon: gitIcon,
+    title: "git",
+  },
+  {
+    id: 12,
+    icon: uiuxIcon,
+    title: "UI/UX (Basic Knowledge)",
   },
 ];

@@ -32,7 +32,7 @@ const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <SkillText
-                skillTitle="Top Skills"
+                skillTitle="Skills"
                 skillParagraph="I have a deep appreciation for clean and maintainable code, and I'm
         always eager to learn and adapt to the latest industry trends. With a
         passion for creating pixel-perfect designs and optimizing user
