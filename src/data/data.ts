@@ -27,19 +27,24 @@ import uiuxIcon from "../assets/img/ui-ux.png";
 export const projects: Project[] = [
   {
     title: "This Portfolio",
-    description: "React, Bootstrap",
+    description: "Tech Stack: React | Typescript | Bootstrap",
     imgUrl: projImg1,
+    btnText1: "Website",
+    btnText2: "Github",
   },
   {
     title: "Brainster Labs",
-    description:
-      " Created a responsive webpage for Brainster showcasing academies using HTML, SASS, and JavaScript. Features navigation, filtering, and project cards, along with a validation-enabled employment form..",
+    description: "Tech Stack: Javascript | HTML | CSS | Regex",
     imgUrl: projImg2,
+    btnText1: "Website",
+    btnText2: "Github",
   },
   {
     title: "Street Artists",
-    description: "React, Bootstrap, CSS",
+    description: "Tech Stack: Javascript | CSS | Chart.js",
     imgUrl: projImg3,
+    btnText1: "Website",
+    btnText2: "Github",
   },
 ];
 

@@ -161,7 +161,8 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
+.navbar-text button,
+.project-content-wrapper button {
   color: #fff;
   border: 1px solid #fff;
   padding: 10px 20px;
@@ -171,10 +172,12 @@ span.navbar-text {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button span {
+.navbar-text button span,
+.project-content-wrapper button span {
   z-index: 1;
 }
-.navbar-text button::before {
+.navbar-text button::before,
+.project-content-wrapper button::before {
   content: "";
   width: 0%;
   height: 100%;
@@ -185,10 +188,12 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
+.navbar-text button:hover,
+.project-content-wrapper button:hover {
   color: #121212;
 }
-.navbar-text button:hover::before {
+.navbar-text button:hover::before,
+.project-content-wrapper button:hover::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -366,6 +371,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 3rem 0;
   background-color: black;
   position: relative;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+  min-height: 300px;
 }
 .project h2 {
   font-size: 45px;
@@ -375,45 +383,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project p {
   color: #b8b8b8;
   font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: left;
 }
 
 .project-content-wrapper {
-  border: 1px solid red;
+  border: 1px solid #fff;
+
 }
 
 .project-content-text {
-  margin: 2rem 0;
+  margin: 2rem 15px;
 }
 
-.project-content-wrapper h4{
+.project-content-wrapper h4 {
   text-align: center;
-}
-
-.project-content-wrapper p {
-  margin: 0 0.5rem;
-  text-align: left;
 }
 
 
 .project-content-wrapper img {
   width: 100%;
-  height: 250px;
+  height: 200px;
+}
 
+.project-content-wrapper button {
+  margin-left: 0;
+}
+
+.button-wrapper .left {
+  margin-right: 0.5rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 /*/////////////////////
 /-----> /MEDIA-QUERIES/ <-----/ 
 /////////////////////*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner h1 {
     font-size: 3rem;
   }
+  .project-content-wrapper img {
+  width: 100%;
+  height: 250px;
+}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .banner h1 {
     font-size: 2.5rem;
   }
