@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import BannerContent from "./sub-components/BannerContent";
+import { bannerText } from "../../data/data";
 
 interface BannerState {
   loopNum: number;
@@ -10,12 +11,6 @@ interface BannerState {
   text: string;
   delta: number;
 }
-
-const bannerText: string[] = [
-  "Frontend Developer.",
-  "React Developer.",
-  "Javascript Developer.",
-];
 
 const Banner = () => {
   const [state, setState] = useState<BannerState>({

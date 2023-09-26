@@ -48,3 +48,9 @@ export const navLinks = [
   { to: "/#skills", text: "Skills" },
   { to: "/#projects", text: "Projects" },
 ];
+
+export const bannerText: string[] = [
+  "Frontend Developer.",
+  "React Developer.",
+  "Javascript Developer.",
+];

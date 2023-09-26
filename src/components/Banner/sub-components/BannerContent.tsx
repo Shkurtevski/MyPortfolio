@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import Tagline from "./Tagline";
 import TextRotator from "./TextRotator";
+import { bannerText } from "../../../data/data";
 
 interface BannerContentProps {
   text: string;
@@ -9,16 +10,9 @@ interface BannerContentProps {
 }
 
 const BannerContent = ({ text, additionalText }: BannerContentProps) => (
-  <div>
+  <React.Fragment>
     <Tagline text={additionalText} />
-    <TextRotator
-      text={text}
-      rotationText={[
-        "Frontend Developer.",
-        "React Developer.",
-        "Javascript Developer.",
-      ]}
-    />
+    <TextRotator text={text} rotationText={bannerText} />
     <p>
       My journey as a Junior Frontend Developer has been fueled by a relentless
       pursuit of knowledge. I'm a firm believer in lifelong learning, constantly
@@ -28,7 +22,7 @@ const BannerContent = ({ text, additionalText }: BannerContentProps) => (
     <button onClick={() => console.log("connect")}>
       Let's Connect <ArrowRightCircle size={25} />
     </button>
-  </div>
+  </React.Fragment>
 );
 
 export default BannerContent;
