@@ -26,17 +26,18 @@ import uiuxIcon from "../assets/img/ui-ux.png";
 
 export const projects: Project[] = [
   {
-    title: "Brainster Labs",
-    description: "Javascript, HTML and SCSS",
+    title: "This Portfolio",
+    description: "React, Bootstrap",
     imgUrl: projImg1,
   },
   {
-    title: "Street Artists",
-    description: "Javascript, SCSS",
+    title: "Brainster Labs",
+    description:
+      " Created a responsive webpage for Brainster showcasing academies using HTML, SASS, and JavaScript. Features navigation, filtering, and project cards, along with a validation-enabled employment form..",
     imgUrl: projImg2,
   },
   {
-    title: "This Portfolio",
+    title: "Street Artists",
     description: "React, Bootstrap, CSS",
     imgUrl: projImg3,
   },
@@ -121,7 +122,7 @@ export const skillsData = [
   {
     id: 10,
     icon: tailwindIcon,
-    title: "Tailwind CSS",
+    title: "Tailwind CSS (Basic Knowledge)",
   },
   {
     id: 11,

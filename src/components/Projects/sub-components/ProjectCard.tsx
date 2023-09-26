@@ -10,15 +10,17 @@ interface Props {
 
 const ProjectCard = ({ title, description, imgUrl, altText }: Props) => {
   return (
-    <Col xs={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        <img src={imgUrl} alt={altText} />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
+    <React.Fragment>
+      <Col xs={12} sm={6} md={4}>
+        <div className="project-content-wrapper">
+          <img src={imgUrl} alt={altText} />
+          <div className="project-content-text">
+            <h4>{title}</h4>
+            <p>{description}</p>
+          </div>
         </div>
-      </div>
-    </Col>
+      </Col>
+    </React.Fragment>
   );
 };
 

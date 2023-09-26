@@ -380,6 +380,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
 }
+
+.project-content-wrapper {
+  border: 1px solid red;
+}
+
+.project-content-text {
+  margin: 2rem 0;
+}
+
+.project-content-wrapper h4{
+  text-align: center;
+}
+
+.project-content-wrapper p {
+  margin: 0 0.5rem;
+  text-align: left;
+}
+
+
+.project-content-wrapper img {
+  width: 100%;
+  height: 250px;
+
+}
 /*/////////////////////
 /-----> /MEDIA-QUERIES/ <-----/ 
 /////////////////////*/
