@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
-import SocialLink from "./SocialLink";
+import SocialLink from "./sub-components/SocialLink";
 import { socialLinksData } from "../../data/data";
-import NavLink from "./NavLink";
+import NavLink from "./sub-components/NavLink";
 import { navLinks } from "../../data/data";
 
 const NavBar = () => {

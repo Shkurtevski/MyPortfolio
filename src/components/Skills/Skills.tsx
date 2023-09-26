@@ -1,11 +1,11 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import javascriptIcon from "../assets/img/javascript-logo.png";
-import reactIcon from "../assets/img/React-icon.png";
-import cssIcon from "../assets/img/css-logo.png";
-import htmlIcon from "../assets/img/html-logo.png";
-import sassIcon from "../assets/img/sass-logo.png";
-import colorSharp from "../assets/img/color-sharp.png";
+import javascriptIcon from "../../assets/img/javascript-logo.png";
+import reactIcon from "../../assets/img/React-icon.png";
+import cssIcon from "../../assets/img/css-logo.png";
+import htmlIcon from "../../assets/img/html-logo.png";
+import sassIcon from "../../assets/img/sass-logo.png";
+import colorSharp from "../../assets/img/color-sharp.png";
 
 const Skills = () => {
   const responsive = {

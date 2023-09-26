@@ -1,13 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { projects } from "../data/data";
+import { projects } from "../../data/data";
 import ProjectCard from "./sub-components/ProjectCard";
 
 interface Props {
-    title: string;
-    text: string;
+  title: string;
+  text: string;
 }
 
-const Projects = ({title, text}: Props) => {
+const Projects = ({ title, text }: Props) => {
   return (
     <section className="project" id="projects">
       <Container>

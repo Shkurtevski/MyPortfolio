@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import BannerContent from "./sub-components/BannerContent";
 
 interface BannerState {
   loopNum: number;
@@ -14,7 +14,7 @@ interface BannerState {
 const bannerText: string[] = [
   "Frontend Developer.",
   "React Developer.",
-  "JavaScript Developer.",
+  "Javascript Developer.",
 ];
 
 const Banner = () => {
@@ -72,25 +72,10 @@ const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {`Hi! I'm Nenad,`}{" "}
-                    <span
-                      className="txt-rotate"
-                      data-rotate='[ "Frontend Developer.", "NContinuous Learner.", "Goal-Driven." ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
-                  <p>
-                    My journey as a Junior Frontend Developer has been fueled by
-                    a relentless pursuit of knowledge. I'm a firm believer in
-                    lifelong learning, constantly exploring new technologies and
-                    design trends to stay at the forefront of the industry.
-                  </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <BannerContent
+                    text={text}
+                    additionalText="Welcome to my Portfolio"
+                  />
                 </div>
               )}
             </TrackVisibility>
