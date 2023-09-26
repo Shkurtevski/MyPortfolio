@@ -4,4 +4,6 @@ export interface Project {
   imgUrl: string;
   btnText1: string;
   btnText2: string;
+  website: string;
+  github: string;
 }

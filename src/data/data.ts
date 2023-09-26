@@ -31,6 +31,8 @@ export const projects: Project[] = [
     imgUrl: projImg1,
     btnText1: "Website",
     btnText2: "Github",
+    website: "https://shkurtevski.github.io/MyPortfolio/",
+    github: "https://github.com/Shkurtevski/MyPortfolio",
   },
   {
     title: "Brainster Labs",
@@ -38,6 +40,8 @@ export const projects: Project[] = [
     imgUrl: projImg2,
     btnText1: "Website",
     btnText2: "Github",
+    website: "https://shkurtevski.github.io/BrainsterLabs/",
+    github: "https://github.com/Shkurtevski/BrainsterLabs",
   },
   {
     title: "Street Artists",
@@ -45,6 +49,8 @@ export const projects: Project[] = [
     imgUrl: projImg3,
     btnText1: "Website",
     btnText2: "Github",
+    website: "https://thoughtful-pig-coveralls.cyclic.cloud/",
+    github: "https://github.com/Shkurtevski/StreetArtists",
   },
 ];
 

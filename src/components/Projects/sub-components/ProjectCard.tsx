@@ -1,8 +1,17 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import { Project } from "../../../data/dataTypes";
+import ProjectButton from "./ProjectButton";
 
-const ProjectCard = ({ title, description, imgUrl, btnText1, btnText2 }: Project) => {
+const ProjectCard = ({
+  title,
+  description,
+  imgUrl,
+  btnText1,
+  btnText2,
+  website,
+  github,
+}: Project) => {
   return (
     <React.Fragment>
       <Col xs={12} md={6} className="mb-2 project-card">
@@ -12,12 +21,8 @@ const ProjectCard = ({ title, description, imgUrl, btnText1, btnText2 }: Project
             <h4>{title}</h4>
             <p>{description}</p>
             <div className="button-wrapper">
-              <button className="vvd left">
-                <span>{btnText1}</span>
-              </button>
-              <button className="vvd right">
-                <span>{btnText2}</span>
-              </button>
+              <ProjectButton text={btnText1} url={website} target="_blank" />
+              <ProjectButton text={btnText2} url={github} target="_blank" />
             </div>
           </div>
         </div>
