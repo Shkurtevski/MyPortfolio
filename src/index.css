@@ -391,6 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 
+
 .project-content-text {
   margin: 2rem 15px;
 }
@@ -439,10 +440,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .social-icon {
     margin-left: 0;
   }
+  .project-card:not(:last-child) {
+  margin-bottom: 24px;
+}
 }
 
 @media (max-width: 375px) {

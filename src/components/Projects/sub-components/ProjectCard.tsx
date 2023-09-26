@@ -14,7 +14,7 @@ const ProjectCard = ({
 }: Project) => {
   return (
     <React.Fragment>
-      <Col xs={12} md={6} className="mb-2 project-card">
+      <Col xs={12} md={6} lg={4} className="project-card">
         <div className="project-content-wrapper">
           <img src={imgUrl} alt="projects" />
           <div className="project-content-text">
