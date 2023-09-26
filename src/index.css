@@ -325,7 +325,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /-----> /SKILLS/ <-----/ 
 /////////////////////*/
 .skill {
-  padding: 0 0 3rem 0;
+  padding: 0 0 calc(3rem + 24px) ;
   position: relative;
 }
 .skill-bx {
@@ -370,16 +370,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 3rem 0;
   background-color: black;
-  position: relative;
-  z-index: 9999;
-  transition: 0.32s ease-in-out;
-  min-height: 300px;
 }
+
 .project h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  padding-top: 24px;
+  margin-bottom: 16px;
 }
+
 .project p {
   color: #b8b8b8;
   font-size: 18px;
@@ -388,9 +388,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-content-wrapper {
   border: 1px solid #fff;
-
+  background-color: #151515;
+  transition: transform 0.2s ease-in-out;
+  background-image: url("./assets/img/color-sharp2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.project-content-wrapper:hover {
+  transform: scale(0.93);
+  cursor: pointer;
+}
+
+.project-card {
+  padding-bottom: 24px;
+}
 
 .project-content-text {
   margin: 2rem 15px;
@@ -444,9 +456,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .social-icon {
     margin-left: 0;
   }
-  .project-card:not(:last-child) {
-  margin-bottom: 24px;
-}
 }
 
 @media (max-width: 375px) {

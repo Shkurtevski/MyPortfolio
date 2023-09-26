@@ -1,9 +1,10 @@
 import { Project } from "./dataTypes";
 
 // Project Images
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import portfolioImg from "../assets/img/portfolio.png";
+import brainsterLabsImg from "../assets/img/brainster-labs.png";
+import streetArtistsImg from "../assets/img/street-artists.png";
+import codingChallengesImg from "../assets/img/coding-challenges.jpg"
 
 // Social Media Icons
 import linkedinIcon from "../assets/img/linkedin.svg";
@@ -27,8 +28,8 @@ import uiuxIcon from "../assets/img/ui-ux.png";
 export const projects: Project[] = [
   {
     title: "This Portfolio",
-    description: "Tech Stack: React | Typescript | Bootstrap",
-    imgUrl: projImg1,
+    description: "Tech Stack: React | Typescript | CSS | Bootstrap",
+    imgUrl: portfolioImg,
     btnText1: "Website",
     btnText2: "Github",
     website: "https://shkurtevski.github.io/MyPortfolio/",
@@ -36,8 +37,8 @@ export const projects: Project[] = [
   },
   {
     title: "Brainster Labs",
-    description: "Tech Stack: Javascript | HTML | CSS | Regex",
-    imgUrl: projImg2,
+    description: "Tech Stack: Javascript | HTML | Regex | SCSS(SASS)",
+    imgUrl: brainsterLabsImg,
     btnText1: "Website",
     btnText2: "Github",
     website: "https://shkurtevski.github.io/BrainsterLabs/",
@@ -45,12 +46,21 @@ export const projects: Project[] = [
   },
   {
     title: "Street Artists",
-    description: "Tech Stack: Javascript | CSS | Chart.js",
-    imgUrl: projImg3,
+    description: "Tech Stack: Javascript | Chart.js | SCSS(SASS)",
+    imgUrl: streetArtistsImg,
     btnText1: "Website",
     btnText2: "Github",
     website: "https://thoughtful-pig-coveralls.cyclic.cloud/",
     github: "https://github.com/Shkurtevski/StreetArtists",
+  },
+  {
+    title: "Various Coding Challenges",
+    description: "Tech Stack: HTML | CSS | Javascript | React | SCSS(SASS)",
+    imgUrl: codingChallengesImg,
+    btnText1: "Learn More",
+    btnText2: "Github",
+    website: "https://github.com/Shkurtevski/CodingChallenges",
+    github: "https://github.com/Shkurtevski/CodingChallenges",
   },
 ];
 

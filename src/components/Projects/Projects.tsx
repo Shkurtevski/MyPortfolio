@@ -13,7 +13,7 @@ const Projects = ({ title, text }: Props) => {
       <Container>
         <Row>
           <Col size={12}>
-            <div>
+            <div className="Project">
               <h2>{title}</h2>
               <p>{text}</p>
             </div>
