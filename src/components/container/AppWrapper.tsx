@@ -3,7 +3,8 @@ import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
-import Contact from "../Contact";
+import Contact from "../Contact/Contact";
+import { Footer } from "../Footer/Footer";
 
 const AppWrapper = () => {
   return (
@@ -19,6 +20,7 @@ const AppWrapper = () => {
                 of type and scrambled it to make a type specimen book."
       />
       <Contact />
+      <Footer/>
     </React.Fragment>
   );
 };

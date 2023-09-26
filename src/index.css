@@ -307,6 +307,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+.connect-btn-hash {
+  text-decoration: none;
+}
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -325,7 +328,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /-----> /SKILLS/ <-----/ 
 /////////////////////*/
 .skill {
-  padding: 0 0 calc(3rem + 24px) ;
+  padding: 0 0 calc(3rem + 24px);
   position: relative;
 }
 .skill-bx {
@@ -411,7 +414,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project-content-wrapper h4 {
   text-align: center;
 }
-
 
 .project-content-wrapper img {
   width: 100%;
@@ -516,6 +518,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+/*/////////////////////
+/-----> /FOOTER/ <-----/ 
+/////////////////////*/
+.footer {
+  padding: 72px 0;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.txt-rotate {
+  color: #cdf7ff;
+}
+
 /*/////////////////////
 /-----> /MEDIA-QUERIES/ <-----/ 
 /////////////////////*/
@@ -524,9 +546,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 3rem;
   }
   .project-content-wrapper img {
-  width: 100%;
-  height: 250px;
-}
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media (max-width: 575px) {

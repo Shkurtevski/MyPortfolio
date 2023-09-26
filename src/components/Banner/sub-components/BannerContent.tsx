@@ -3,6 +3,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import Tagline from "./Tagline";
 import TextRotator from "./TextRotator";
 import { bannerText } from "../../../data/data";
+import { HashLink } from "react-router-hash-link";
 
 interface BannerContentProps {
   text: string;
@@ -19,9 +20,11 @@ const BannerContent = ({ text, additionalText }: BannerContentProps) => (
       exploring new technologies and design trends to stay at the forefront of
       the industry.
     </p>
-    <button onClick={() => console.log("connect")}>
-      Let's Connect <ArrowRightCircle size={25} />
-    </button>
+    <HashLink to="#connect" className="connect-btn-hash">
+      <button className="connect-btn">
+        Let's Connect <ArrowRightCircle size={25} />
+      </button>
+    </HashLink>
   </React.Fragment>
 );
 
