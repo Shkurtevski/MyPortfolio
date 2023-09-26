@@ -1,11 +1,9 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import javascriptIcon from "../../assets/img/javascript-logo.png";
-import reactIcon from "../../assets/img/React-icon.png";
-import cssIcon from "../../assets/img/css-logo.png";
-import htmlIcon from "../../assets/img/html-logo.png";
-import sassIcon from "../../assets/img/sass-logo.png";
 import colorSharp from "../../assets/img/color-sharp.png";
+import { skillsData } from "../../data/data";
+import SkillItem from "./sub-components/SkillItem";
+import SkillText from "./sub-components/SkillText";
 
 const Skills = () => {
   const responsive = {
@@ -33,39 +31,26 @@ const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Top Skills</h2>
-              <p>
-                I have a deep appreciation for clean and maintainable code, and
-                I'm always eager to learn and adapt to the latest industry
-                trends. With a passion for creating pixel-perfect designs and
-                optimizing user experiences, I'm committed to delivering
-                high-quality web solutions that exceed expectations.
-              </p>
+              <SkillText
+                skillTitle="Top Skills"
+                skillParagraph="I have a deep appreciation for clean and maintainable code, and I'm
+        always eager to learn and adapt to the latest industry trends. With a
+        passion for creating pixel-perfect designs and optimizing user
+        experiences, I'm committed to delivering high-quality web solutions that
+        exceed expectations."
+              />
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
-                <div className="item">
-                  <img src={reactIcon} alt="javascript-logo" />
-                  <h5>React</h5>
-                </div>
-                <div className="item">
-                  <img src={javascriptIcon} alt="react-logo" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={cssIcon} alt="css-icon" />
-                  <h5>CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={htmlIcon} alt="html-icon" />
-                  <h5>HTML</h5>
-                </div>
-                <div className="item">
-                  <img src={sassIcon} alt="sass-icon" />
-                  <h5>Sass</h5>
-                </div>
+                {skillsData.map((skill) => (
+                  <SkillItem
+                    key={skill.id}
+                    icon={skill.icon}
+                    title={skill.title}
+                  />
+                ))}
               </Carousel>
             </div>
           </div>
