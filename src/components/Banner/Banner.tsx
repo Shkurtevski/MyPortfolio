@@ -12,9 +12,9 @@ interface BannerState {
 }
 
 const bannerText: string[] = [
-  "Junior Frontend Developer.",
-  "Continuous Learner.",
-  "Goal-Driven.",
+  "Frontend Developer.",
+  "React Developer.",
+  "JavaScript Developer.",
 ];
 
 const Banner = () => {
