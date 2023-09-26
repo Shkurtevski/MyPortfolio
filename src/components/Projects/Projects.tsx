@@ -2,20 +2,21 @@ import { Container, Row, Col } from "react-bootstrap";
 import { projects } from "../../data/data";
 import ProjectCard from "./sub-components/ProjectCard";
 
-interface Props {
-  title: string;
-  text: string;
-}
-
-const Projects = ({ title, text }: Props) => {
+const Projects = () => {
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <div className="Project">
-              <h2>{title}</h2>
-              <p>{text}</p>
+              <h2>Projects</h2>
+              <p>
+                Explore a diverse range of my recent projects, each showcasing
+                my passion and skills in web development. From dynamic web
+                applications to creative design solutions, these projects
+                reflect my dedication to creating innovative and user-friendly
+                digital experiences.
+              </p>
             </div>
             <Row>
               {projects.map((project, index) => {

@@ -436,7 +436,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /-----> /CONTACT/ <-----/ 
 /////////////////////*/
 .contact {
-  position: relative; /* Set the position to relative for stacking */
+  position: relative;
   padding: 72px 0;
 }
 
@@ -447,9 +447,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #d14599 -5.91%, #5437d4 111.58%);
   filter: brightness(70%);
-  z-index: -1; /* Place it behind the content */
+  z-index: -1; 
 }
 
 .contact h2 {
