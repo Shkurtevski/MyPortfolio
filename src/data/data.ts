@@ -4,7 +4,7 @@ import { Project } from "./dataTypes";
 import portfolioImg from "../assets/img/portfolio.png";
 import brainsterLabsImg from "../assets/img/brainster-labs.png";
 import streetArtistsImg from "../assets/img/street-artists.png";
-import codingChallengesImg from "../assets/img/coding-challenges.jpg"
+import codingChallengesImg from "../assets/img/coding-challenges.jpg";
 
 // Social Media Icons
 import linkedinIcon from "../assets/img/linkedin.svg";
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     imgUrl: portfolioImg,
     btnText1: "Website",
     btnText2: "Github",
-    website: "https://shkurtevski.github.io/MyPortfolio/",
+    website: "https://shkurtevski.dev/",
     github: "https://github.com/Shkurtevski/MyPortfolio",
   },
   {
@@ -61,6 +61,16 @@ export const projects: Project[] = [
     btnText2: "Github",
     website: "https://github.com/Shkurtevski/CodingChallenges",
     github: "https://github.com/Shkurtevski/CodingChallenges",
+  },
+];
+
+export const contactInformations = [
+  {
+    phoneNumber: "01736815852",
+    email: "nenad.shkurtevski1@gmail.com",
+    linkedin: "https://www.linkedin.com/in/nenad-shkurtevski-b49b20250/",
+    github: "https://github.com/Shkurtevski",
+    gitlab: "https://gitlab.com/Shkurtevski",
   },
 ];
 
