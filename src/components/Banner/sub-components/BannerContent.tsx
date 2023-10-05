@@ -3,7 +3,6 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import Tagline from "./Tagline";
 import TextRotator from "./TextRotator";
 import { bannerText } from "../../../data/data";
-import { HashLink } from "react-router-hash-link";
 
 interface BannerContentProps {
   text: string;
@@ -20,11 +19,16 @@ const BannerContent = ({ text, additionalText }: BannerContentProps) => (
       exploring new technologies and design trends to stay at the forefront of
       the industry.
     </p>
-    <HashLink to="#connect" className="connect-btn-hash">
-      <button className="connect-btn">
-        Let's Connect <ArrowRightCircle size={25} />
-      </button>
-    </HashLink>
+    <button className="connect-btn">
+      <a
+        className="link-to-cv"
+        href="https://apricot-linzy-36.tiiny.site/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Curriculum Vitae <ArrowRightCircle size={25} />
+      </a>
+    </button>
   </React.Fragment>
 );
 

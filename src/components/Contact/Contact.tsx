@@ -1,18 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { contactInformations } from "../../data/data";
-import ContactInformation from "./sub-components/ContactInformation";
 
 const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col md={6} sm={12} className="contact-informations">
-            {contactInformations.map((contact, index) => (
-              <ContactInformation key={index} {...contact} />
-            ))}
-          </Col>
-          <Col md={6} sm={12}>
+          <Col size={12}>
             <div>
               <h2>Get In Touch</h2>
               <form action="" name="contact" method="POST" data-netlify="true">
@@ -44,10 +37,9 @@ const Contact = () => {
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
-                      required
                       type="tel"
                       name="tel"
-                      placeholder="Phone No."
+                      placeholder="Phone No. (optional)"
                     />
                   </Col>
                   <Col size={12} className="px-1">

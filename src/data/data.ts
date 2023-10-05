@@ -64,16 +64,6 @@ export const projects: Project[] = [
   },
 ];
 
-export const contactInformations = [
-  {
-    phoneNumber: "01736815852",
-    email: "nenad.shkurtevski1@gmail.com",
-    linkedin: "https://www.linkedin.com/in/nenad-shkurtevski-b49b20250/",
-    github: "https://github.com/Shkurtevski",
-    gitlab: "https://gitlab.com/Shkurtevski",
-  },
-];
-
 export const socialLinksData = [
   {
     href: "https://www.linkedin.com/in/nenad-shkurtevski-b49b20250/",
