@@ -4,6 +4,7 @@ import { Project } from "./dataTypes";
 import portfolioImg from "../assets/img/portfolio.png";
 import brainsterLabsImg from "../assets/img/brainster-labs.png";
 import streetArtistsImg from "../assets/img/street-artists.png";
+import carRacingGameImg from "../assets/img/Car-Racing-Game-img.png";
 import codingChallengesImg from "../assets/img/coding-challenges.jpg";
 
 // Social Media Icons
@@ -52,6 +53,15 @@ export const projects: Project[] = [
     btnText2: "Github",
     website: "https://thoughtful-pig-coveralls.cyclic.cloud/",
     github: "https://github.com/Shkurtevski/StreetArtists",
+  },
+  {
+    title: "Car Racing Game",
+    description: "Tech Stack: Javascript | jQuery | Bootstrap | CSS",
+    imgUrl: carRacingGameImg,
+    btnText1: "Website",
+    btnText2: "Github",
+    website: "https://shkurtevski.github.io/Car-Racing-Game/",
+    github: "https://github.com/Shkurtevski/Car-Racing-Game",
   },
   {
     title: "Various Coding Challenges",

@@ -447,8 +447,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(90.21deg, #d14599 -5.91%, #5437d4 111.58%);
-  filter: brightness(70%);
+  background: linear-gradient(135deg, #0077cc, #993399);
+  filter: brightness(40%);
   z-index: -1;
 }
 
