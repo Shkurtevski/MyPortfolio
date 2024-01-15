@@ -13,21 +13,19 @@ const ProjectCard = ({
   github,
 }: Project) => {
   return (
-    <React.Fragment>
-      <Col xs={12} md={6} lg={4} className="project-card">
-        <div className="project-content-wrapper">
-          <img src={imgUrl} alt="projects" />
-          <div className="project-content-text">
-            <h4>{title}</h4>
-            <p>{description}</p>
-            <div className="button-wrapper">
-              <ProjectButton text={btnText1} url={website} target="_blank" />
-              <ProjectButton text={btnText2} url={github} target="_blank" />
-            </div>
+    <Col xs={12} md={6} lg={4} className="project-card d-flex">
+      <div className="project-content-wrapper flex-column d-flex">
+        <img src={imgUrl} alt="projects" className="img-fluid" />
+        <div className="project-content-text flex-grow-1 d-flex flex-column">
+          <h4>{title}</h4>
+          <p>{description}</p>
+          <div className="button-wrapper mt-auto">
+            <ProjectButton text={btnText1} url={website} target="_blank" />
+            <ProjectButton text={btnText2} url={github} target="_blank" />
           </div>
         </div>
-      </Col>
-    </React.Fragment>
+      </div>
+    </Col>
   );
 };
 

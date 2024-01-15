@@ -6,6 +6,8 @@ import brainsterLabsImg from "../assets/img/brainster-labs.png";
 import streetArtistsImg from "../assets/img/street-artists.png";
 import carRacingGameImg from "../assets/img/Car-Racing-Game-img.png";
 import codingChallengesImg from "../assets/img/coding-challenges.jpg";
+import cozaStoreImg from "../assets/img/coza-store.png";
+import igralishte from "../assets/img/Igralishte-img.png";
 
 // Social Media Icons
 import linkedinIcon from "../assets/img/linkedin.svg";
@@ -25,8 +27,36 @@ import jqueryIcon from "../assets/img/jquery-logo.png";
 import gitIcon from "../assets/img/git-logo.png";
 import nextjsIcon from "../assets/img/next-js-logo.svg";
 import uiuxIcon from "../assets/img/ui-ux.png";
+import marinov from "../assets/img/marinov.png";
 
 export const projects: Project[] = [
+  {
+    title: "Marinov - Online Antique Store (Hackathon)",
+    description: "Tech Stack: React | Typescript | Sass | Bootstrap",
+    imgUrl: marinov,
+    btnText1: "Learn More",
+    btnText2: "Github",
+    website: "https://github.com/Shkurtevski/hackathon-online-store",
+    github: "https://github.com/Shkurtevski/hackathon-online-store",
+  },
+  {
+    title: "Igralishte - Online Clothing Store (Mobile - App)",
+    description: "Tech Stack: React | Typescript | Sass",
+    imgUrl: igralishte,
+    btnText1: "Website",
+    btnText2: "Github",
+    website: "https://igralishte-kappa.vercel.app/",
+    github: "https://github.com/Shkurtevski/igralishte",
+  },
+  {
+    title: "E-Commerce Store",
+    description: "Tech Stack: Next.js | Typescript | CSS | Bootstrap",
+    imgUrl: cozaStoreImg,
+    btnText1: "Learn More",
+    btnText2: "Github",
+    website: "https://github.com/Shkurtevski/E-Commerce-Shop",
+    github: "https://github.com/Shkurtevski/E-Commerce-Shop",
+  },
   {
     title: "This Portfolio",
     description: "Tech Stack: React | Typescript | CSS | Bootstrap",
@@ -38,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     title: "Brainster Labs",
-    description: "Tech Stack: Javascript | HTML | Regex | SCSS(SASS)",
+    description: "Tech Stack: Javascript | HTML | Regex | Sass",
     imgUrl: brainsterLabsImg,
     btnText1: "Website",
     btnText2: "Github",
@@ -47,7 +77,8 @@ export const projects: Project[] = [
   },
   {
     title: "Street Artists",
-    description: "Tech Stack: Javascript | Chart.js | SCSS(SASS)",
+    description:
+      "Tech Stack: Javascript | Chart.js | Sass | Node Server | Vanilla JS - Router",
     imgUrl: streetArtistsImg,
     btnText1: "Website",
     btnText2: "Github",
@@ -65,7 +96,8 @@ export const projects: Project[] = [
   },
   {
     title: "Various Coding Challenges",
-    description: "Tech Stack: HTML | CSS | Javascript | React | SCSS(SASS)",
+    description:
+      "Tech Stack: HTML | CSS | Sass | Javascript | React | Next.js | jQuery",
     imgUrl: codingChallengesImg,
     btnText1: "Learn More",
     btnText2: "Github",
@@ -123,7 +155,7 @@ export const skillsData = [
   {
     id: 4,
     icon: nextjsIcon,
-    title: "Next js (Basic Knowledge)",
+    title: "Next.js",
   },
   {
     id: 5,
@@ -153,7 +185,7 @@ export const skillsData = [
   {
     id: 10,
     icon: tailwindIcon,
-    title: "Tailwind CSS (Basic Knowledge)",
+    title: "Tailwind CSS",
   },
   {
     id: 11,
@@ -163,6 +195,6 @@ export const skillsData = [
   {
     id: 12,
     icon: uiuxIcon,
-    title: "UI/UX (Basic Knowledge)",
+    title: "UI/UX",
   },
 ];

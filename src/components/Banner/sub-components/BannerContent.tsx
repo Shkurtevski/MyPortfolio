@@ -22,7 +22,7 @@ const BannerContent = ({ text, additionalText }: BannerContentProps) => (
     <button className="connect-btn">
       <a
         className="link-to-cv"
-        href="https://lavender-sella-26.tiiny.site/"
+        href="https://black-karie-44.tiiny.site/"
         target="_blank"
         rel="noopener noreferrer"
       >

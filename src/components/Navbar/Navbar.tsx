@@ -9,6 +9,7 @@ import { navLinks } from "../../data/data";
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState<string>("home");
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -26,12 +27,25 @@ const NavBar = () => {
 
   const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
+    setExpanded(false); // Close the Navbar when a link is clicked
+  };
+
+  const onContactClick = () => {
+    setExpanded(false); // Close the Navbar when the "Contact" button is clicked
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar
+      expand="lg"
+      className={scrolled ? "scrolled" : ""}
+      expanded={expanded}
+      onSelect={() => setExpanded(false)}
+    >
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        >
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -49,7 +63,7 @@ const NavBar = () => {
           <span className="navbar-text">
             <SocialLink socialLinks={socialLinksData} />
             <HashLink to="#connect">
-              <button className="vvd">
+              <button className="vvd" onClick={onContactClick}>
                 <span>Contact</span>
               </button>
             </HashLink>

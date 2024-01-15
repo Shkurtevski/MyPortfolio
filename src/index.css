@@ -262,15 +262,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+    200deg,
+    rgba(0, 119, 204, 0.4),
+    rgba(153, 51, 153, 0.4)
   );
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #993399;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
+
 .banner h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -392,10 +393,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project-content-wrapper {
-  border: 1px solid #fff;
-  background-color: #151515;
+  border: 1px solid #993399;
+  background: linear-gradient(
+    200deg,
+    rgba(0, 119, 204, 0.3),
+    rgba(153, 51, 153, 0.3)
+  );
   transition: transform 0.2s ease-in-out;
-  background-image: url("./assets/img/color-sharp2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -406,6 +410,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card {
   padding-bottom: 24px;
+}
+
+.project-content-wrapper {
+  width: 100%;
 }
 
 .project-content-text {
@@ -447,8 +455,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(135deg, #0077cc, #993399);
-  filter: brightness(40%);
+  background: linear-gradient(
+    200deg,
+    rgba(0, 119, 204, 0.6),
+    rgba(153, 51, 153, 0.6)
+  );
+
   z-index: -1;
 }
 
@@ -496,6 +508,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .contact form button span {
   z-index: 1;
@@ -565,7 +578,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate {
   color: #cdf7ff;
   font-size: 1.8rem;
+  background: rgba(153, 51, 153, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: perspective(30px);
 }
+
+
 
 /*/////////////////////
 /-----> /MEDIA-QUERIES/ <-----/ 
